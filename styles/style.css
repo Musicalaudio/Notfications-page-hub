@@ -106,7 +106,7 @@ a[data-link="post"]{
   background-color: hsl(var(--neutral-light-grayish-blue-0));
 }
 
-.notification__dot{
+.notification[data-read=false] .notification__dot{
   display: inline-block;
   background-color: hsl(var(--primary-red));
   width: .5rem;
