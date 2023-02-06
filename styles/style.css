@@ -59,11 +59,18 @@ a[data-link="user"]{
   margin-inline-end: .2em;
 }
 
+a[data-link="user"]:hover{
+  color: hsl(var(--primary-blue));
+}
+
 a[data-link="group"]{
   color: hsl(var(--primary-blue));
   margin-inline-start: .2em;
 }
 
+a[data-link="post"]{
+  color: hsl(var(--neutral-dark-grayish-blue))
+}
 
 /* blocks */
 .notifs{
@@ -91,33 +98,50 @@ a[data-link="group"]{
 
 .notification{
   --flex-gap: .75rem;
-  padding: 1rem .5rem;
+  padding: 1rem .75rem;
   border-radius: 10px;
 }
 
 .notification[data-read=false]{
   background-color: hsl(var(--neutral-light-grayish-blue-0));
-  /* flex-direction: row; */
 }
 
-.notification[data-read=false] p{
-  display: flex;
-  align-items: center;
-}
-
-.notification[data-read=false] p:first-of-type::after{
-  content: "";
-  width: .4rem;
-  margin-left: .5rem;
-  border-radius: 50%;
-  aspect-ratio: 1;
+.notification__dot{
+  display: inline-block;
   background-color: hsl(var(--primary-red));
+  width: .5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-left: .25rem;
+  margin-bottom: .025rem;
 }
 
-.notification img{
+.notification img {
   width: 2.5rem;
   aspect-ratio: 1;
   margin-block: .2rem auto;
+}
+
+.notification__post-img{
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.notification__pm{
+  border: 1px solid hsl(var(--neutral-light-grayish-blue-2));
+  padding: .75rem;
+  margin-top: .5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.notification__pm a{
+  font-weight: inherit;
+  color: inherit;
+}
+
+.notification__pm:hover, .notification__pm:focus{
+  background-color: hsl(var(--neutral-light-grayish-blue-1));
 }
 
 /* layouts */
@@ -137,7 +161,7 @@ a[data-link="group"]{
 
 /* utilities */
 .wrapper{
-  max-width: var(--wrapper-width, 75rem);
+  max-width: var(--wrapper-width, 40rem);
   padding-inline: 1.5rem;
   margin-inline: auto;
 }
