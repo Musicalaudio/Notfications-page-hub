@@ -81,7 +81,7 @@ a[data-link="post"]{
 .notifs__header{
   --flex-align: center;
   --flex-gap: .5rem;
-  margin-block: 1.5rem;
+  padding-block: 1.5rem;
 }
 
 .notifs__total{
@@ -173,3 +173,10 @@ a[data-link="post"]{
 /* attribution from template */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 700px){
+  main{
+    margin: min(3rem, .5vw + 1rem);
+  }
+}

@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <!-- css reset -->
-  <link rel="stylesheet" href="./styles/reset.css">
-  <!-- css global stylsheet -->
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Frontend Mentor | Notifications page</title>
-  <!-- JavaScript linked below-->
-  <script src="./main.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<!-- css reset -->
+<link rel="stylesheet" href="./styles/reset.css">
+<!-- css global stylsheet -->
+<link rel="stylesheet" href="./styles/style.css">
+<title>Frontend Mentor | Notifications page</title>
+<!-- JavaScript linked below-->
+<script src="./main.js" defer></script>
 </head>
 <body class="grid">
-  <section class="[ notifs ] [ wrapper flow ]">
+<main>
+  <section class="[ notifs ] [ wrapper ]">
     <div class="[ notifs__header ] [ flex ]">
       <h1>Notifications</h1>
       <p class="notifs__total" aria-label="The number of notifications">3</p>
       <button type="button" class="notifs__mark-all">Mark all as read</button>
     </div>
-    <div class="[ notification ] [ flex ]" data-read=false>
-      <img class="notification__dp" src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber's profile image">
-      <div class="notification__text">
-        <p><a href="#" data-link="user">Mark Webber</a> reacted to your recent post <a href="#">My first tournament today!</a><span class="notification__dot"></span></p>
-        <p class="date">1m ago</p>
+    <div class="flow">
+      <div class="[ notification ] [ flex ]" data-read=false>
+        <img class="notification__dp" src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber's profile image">
+        <div class="notification__text">
+          <p><a href="#" data-link="user">Mark Webber</a> reacted to your recent post <a href="#">My first tournament today!</a><span class="notification__dot"></span></p>
+          <p class="date">1m ago</p>
+        </div>
       </div>
-    </div>
-    <div class="[ notification ] [ flex ]" data-read=false>
-      <img class="notification__dp" src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray's profile image">
-      <div class="notification__text">
-        <p><a href="#" data-link="user">Angela Gray</a> followed you <span class="notification__dot"></span></p>
-        <p class="date">5m ago</p>
+      <div class="[ notification ] [ flex ]" data-read=false>
+        <img class="notification__dp" src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray's profile image">
+        <div class="notification__text">
+          <p><a href="#" data-link="user">Angela Gray</a> followed you <span class="notification__dot"></span></p>
+          <p class="date">5m ago</p>
+        </div>
       </div>
-    </div>
-    <div class="[ notification ] [ flex ]" data-read=false>
-      <img class="notification__dp" src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson's profile image">
-      <div class="notification__text">
-        <p><a href="#" data-link="user">Jacob Thompson</a> has joined your group <a href="#" data-link="group">Chess Club</a><span class="notification__dot"></span></p>
-        <p class="date">1 day ago</p>
+      <div class="[ notification ] [ flex ]" data-read=false>
+        <img class="notification__dp" src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson's profile image">
+        <div class="notification__text">
+          <p><a href="#" data-link="user">Jacob Thompson</a> has joined your group <a href="#" data-link="group">Chess Club</a><span class="notification__dot"></span></p>
+          <p class="date">1 day ago</p>
+        </div>
       </div>
-    </div>
-    <div class="[ notification ] [ flex ]">
-      <img class="notification__dp" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin's profile image">
-      <div class="notification__text">
-        <p><a href="#" data-link="user">Rizky Hasanuddin</a> sent you a private message<p>
-        <p class="date">5 days ago</p>
-        <p class="notification__pm"><a href="#">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-        I'm already having lots of fun and improving my game.</a></p>
+      <div class="[ notification ] [ flex ]">
+        <img class="notification__dp" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin's profile image">
+        <div class="notification__text">
+          <p><a href="#" data-link="user">Rizky Hasanuddin</a> sent you a private message<p>
+          <p class="date">5 days ago</p>
+          <p class="notification__pm"><a href="#">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</a></p>
+        </div>
       </div>
-    </div>
-    <div class="[ notification ] [ flex ]">
-      <img class="notification__dp" src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith's profile image">
-      <div class="notification__text">
-        <p><a href="#" data-link="user">Kimberly Smith</a> commented on your picture</p>
-        <p class="date">1 week ago</p>
+      <div class="[ notification ] [ flex ]">
+        <img class="notification__dp" src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith's profile image">
+        <div class="notification__text">
+          <p><a href="#" data-link="user">Kimberly Smith</a> commented on your picture</p>
+          <p class="date">1 week ago</p>
+        </div>
+        <a href="#" class="notification__post-img"><img src="./assets/images/image-chess.webp" alt="image of kimberly playing chess"></a>
       </div>
-      <a href="#" class="notification__post-img"><img src="./assets/images/image-chess.webp" alt="image of kimberly playing chess"></a>
-    </div>
-    <div class="[ notification ] [ flex ]">
-      <img class="notification__dp" src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson's profile image">
-      <div class="notification__text">
-        <p><a href="#" data-link="user">Nathan Peterson</a> reacted to your recent post <a href="#" data-link="post">5 end-game strategies to increase your win rate</a></p>
-        <p class="date">2 weeks ago</p>
+      <div class="[ notification ] [ flex ]">
+        <img class="notification__dp" src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson's profile image">
+        <div class="notification__text">
+          <p><a href="#" data-link="user">Nathan Peterson</a> reacted to your recent post <a href="#" data-link="post">5 end-game strategies to increase your win rate</a></p>
+          <p class="date">2 weeks ago</p>
+        </div>
       </div>
-    </div>
-    <div class="[ notification ] [ flex ]">
-      <img class="notification__dp" src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim's profile image">
-      <div class="notification__text">
-        <p><a href="#" data-link="user">Anna Kim</a> left the group <a href="#" data-link="group">Chess Club</a></p>
-        <p class="date">2 weeks ago</p>
+      <div class="[ notification ] [ flex ]">
+        <img class="notification__dp" src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim's profile image">
+        <div class="notification__text">
+          <p><a href="#" data-link="user">Anna Kim</a> left the group <a href="#" data-link="group">Chess Club</a></p>
+          <p class="date">2 weeks ago</p>
+        </div>
       </div>
     </div>
   </section>
-  <div class="attribution">
-    Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a rel="noopener" href="https://github.com/Musicalaudio/Notfications-page-hub" target="_blank">Musicalaudio</a>.
-  </div>
+</main>
+<footer class="attribution">
+  Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a rel="noopener" href="https://github.com/Musicalaudio/Notfications-page-hub" target="_blank">Musicalaudio</a>.
+</footer>
 </body>
 </html>
